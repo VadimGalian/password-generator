@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #1C1C1C;
+    --darkblue-color: #1F2937;
+    --lightblue-color: #273549;
+    --accent-color: #10B981;
+    --white-color: white;
+    --grey-color: #D5D4D8;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    color: var(--white-color);
+    font-family: "Inter", sans-serif;
+}
+
+.wrapper {
+    background-color: var(--bg-color);
+    width: 100%;
+    height: 100%;
+    padding: 0.1px;
+}
+
+.main_board {
+    background-color: var(--darkblue-color);
+    border-radius: 50px;
+    width: 550px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 64px auto;
+    padding: 115px 52px;
+}
+
+h2 {
+    font-family: "Karla", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    width: 360px;
+
+}
+
+.accent {
+    color: var(--accent-color);
+}
+
+.description {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--grey-color);
+}
+
+.gen_password {
+    font-weight: 500;
+    font-size: 18px;
+    background-color: var(--accent-color);
+    padding: 9px 17px;
+    border-radius: 5px;
+    border: 0;
+    color: inherit;
+    font-family: inherit;
+    cursor: pointer;
+    height: 40px;
+}
+
+.passwords_container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-top: 2px solid var(--lightblue-color);
+    padding-top: 35px;
+}
+
+.passwords {
+    width: 211px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: var(--lightblue-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--accent-color);
+}
+
+.password_length {
+    width: 100%;
+    border-radius: 5px;
+    border: 0;
+    margin-right: 10px;
+    padding-left: 5px;
+    font-family: inherit;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.input_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
